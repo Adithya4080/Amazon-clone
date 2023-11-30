@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/logo-favicon.png" />
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <section id="signinpage">
+        <div class="page-cont">
+            <div class="page-logo">
+                <h1><a href="index.html"><img src="img/logo.png" alt="Amazon Logo"/></a></h1>
+            </div>
+            <div class="signin-box">
+                <h2>Create Account</h2>
+                <form id="loginForm">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <button type="button" onclick="saveData()">Sign up</button>
+                </form>
+                <div class="details">
+                    <p>Already have an account? <a href="signinpage.html">Sign in</a></p>
+                    <p>Buying for Work? <a href="#">Create a free business account</a></p>
+                </div>
+                <p>By creating an account or logging in, you agree to <br/> Amazon’s <a href="#">Conditions of Use</a> and <a href="#">Privacy Policy.</a></p>
+            </div>
+            <div class="signin-bot">
+                <h4><a href="#">Conditions of Use</a>&emsp;<a href="#">Privacy Notice</a>&emsp;<a href="#">Help</a></h4>
+                <h6>© 1996-2023, Amazon.com, Inc. or its affiliates</h6>
+            </div>
+        </div>
+    </section>
+    <script src="signin.js"></script>
+</body>
+</html>

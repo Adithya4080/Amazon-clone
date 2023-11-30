@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+#signinpage{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#signinpage .page-cont .page-logo{
+    margin: 10px 0px;
+    padding: 0px 50px;
+}
+#signinpage .page-cont .signin-box{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 10px;
+    padding: 25px 50px;
+}
+#signinpage .page-cont .signin-box form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+#signinpage .page-cont .signin-box h2{
+    font-size: 28px;
+    font-weight: 100;
+}
+#signinpage .page-cont .signin-box form label{
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: bold;
+}
+#signinpage .page-cont .signin-box form input{
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+#signinpage .page-cont .signin-box button{
+    margin: 10px 0px;
+    justify-content: center;
+    background-color: rgb(255,202,67);
+    padding: 10px 90px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#signinpage .page-cont .signin-box .details{
+    margin: 25px 0px;
+}
+#signinpage .page-cont .signin-box p{
+    font-size: smaller;
+    margin-bottom: 2px;
+}
+#signinpage .page-cont .signin-bot h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+#signinpage .page-cont .signin-bot h3{
+    cursor: pointer;
+}
+#signinpage .page-cont .signin-bot h3 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 3px;
+    padding: 5px 5px;
+    font-size: medium;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+#signinpage .page-cont .signin-bot h4{
+    margin: 10px 0px;
+}
+#signinpage .page-cont .signin-bot h4 a{
+    color: rgb(46, 145, 178);
+    font-size: small;    
+}
