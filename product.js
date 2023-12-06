@@ -23,7 +23,7 @@ backToTop.addEventListener("click", ()=>{
     function addToCart() {
         var productName = document.getElementById("name").innerText;
         var productPrice = document.getElementById("price").innerText;
-        var productImage = document.getElementById("zoom-image").innerText;
+        var productImage = document.getElementById("zoom-image").src;
 
         var product = {
             name: productName,
@@ -39,4 +39,32 @@ backToTop.addEventListener("click", ()=>{
         window.open("cart.html")
     }
 
-// taking data from local storage
+
+    // removing item from cart
+    var cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+    function displayCartItems() {
+        var cartItemsDiv = document.getElementById("cart-items");
+        cartItemsDiv.innerHTML = "";
+
+        for (var i = 0; i < cartItems.length; i++) {
+            var cartItem = JSON.parse(cartItems[i]);
+
+            var itemDiv = document.createElement("div");
+            itemDiv.innerHTML = `
+                <p>${cartItem.name}</p>
+                <p>$${cartItem.price}</p>
+                <img src="${cartItem.image}" alt="${cartItem.name}" />
+                <button onclick="removeFromCart(${i})">Remove</button>
+            `;
+            cartItemsDiv.appendChild(itemDiv);
+        }
+    }
+
+    function removeFromCart(index) {
+        cartItems.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(cartItems));
+        displayCartItems();
+    }
+
+    displayCartItems();
